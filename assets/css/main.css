@@ -1,0 +1,235 @@
+:root {
+  --brown_color: #bb9b68;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+  --green_color: #75c137;
+  --turquoise_color: #26a6a1;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Animation Overflow  */
+.overflow_content {
+  overflow: hidden !important;
+}
+
+.header_title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 90px;
+}
+
+.header_sub {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  color: white;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sub_title {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--brown_color);
+  font-size: 18px;
+}
+
+.heading_deco {
+  background-color: var(--brown_color);
+  height: 1.8px;
+  width: 10%;
+}
+
+/* Navbar style  */
+.navbar-brand {
+  color: white !important;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.nav-link {
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--brown_color) !important;
+  font-size: 18px;
+}
+
+.menu_icon {
+  color: white;
+  font-size: 35px;
+}
+
+/* Hero style  */
+.header_img_left {
+  height: 30vh;
+  width: 500px;
+  object-fit: contain;
+}
+
+.header_img_right {
+  height: 30vh;
+  width: 500px;
+  object-fit: contain;
+}
+
+.hero_image1 {
+  height: 35vh;
+  width: 30%;
+  object-fit: contain;
+  margin-left: -100px;
+}
+
+.hero_image2 {
+  height: 35vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero_title {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+}
+
+.hero_sub {
+  color: white;
+  font-weight: 400;
+}
+
+/* Menu Items  */
+.menu_pattern {
+  width: 100%;
+}
+
+.menu_img_bg {
+  background-color: var(--brown_color);
+  width: 100%;
+}
+
+.menu_image {
+  height: 300px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.item_title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--brown_color);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.menu_deco {
+  margin-top: +40px;
+  height: 1.3px;
+  width: 100%;
+  background-color: var(--brown_color);
+}
+
+/* Shared Meals style  */
+.shared_image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid var(--brown_color);
+}
+
+.shared_card {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: var(--brown_color);
+  margin-top: -100px;
+  padding-top: 130px;
+  padding-bottom: 20px;
+  height: 320px;
+}
+
+.btn_contact {
+  background-color: var(--brown_color);
+  color: white;
+}
+
+/* Gallery Style  */
+.gallery_image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 20px solid var(--brown_color);
+}
+
+/* Our Story style  */
+.story_video {
+  height: 700px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.btn_contact {
+  background-color: var(--brown_color);
+  color: white;
+}
+
+/* News Letter  */
+.btn_subscribe {
+  background-color: var(--brown_color);
+  color: white;
+}
+
+/* Footer style  */
+.footer_name {
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: var(--brown_color);
+}
+
+.contact_title {
+  color: var(--brown_color);
+}
+
+/* small screen style  */
+@media screen and (max-width: 576px) {
+  .header_img_left {
+    height: 20vh;
+    width: 100%;
+    object-fit: contain;
+    margin-left: -40%;
+  }
+
+  .header_img_right {
+    height: 20vh;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 30px;
+  }
+
+  .hero_title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Merriweather Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Oswald font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open+Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS animation  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+      .hero_background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/hero_bg04.png");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .shared_meals_bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/hero_bg04.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .gallery_bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/gallery_bg02.jpg");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .offcanvas_background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("assets/images/hero_bg04.png");
+      }
+    </style>
+
+    <title>EPOP CORNER</title>
+  </head>
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <section class="hero_background">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light mb-5"
+        style="background-color: transparent !important"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">EPOP CORNER</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="bi bi-list menu_icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="btn btn_subscribe px-5">OUR MENU</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- navbar offcanvas start  -->
+      <div
+        class="offcanvas offcanvas-start offcanvas_background"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+          <button class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i
+              class="bi bi-x-lg text-white"
+              style="font-size: 22px; color: #bb9b68 !important"
+            ></i>
+          </button>
+        </div>
+        <div class="offcanvas-body py-5">
+          <center>
+            <h1 class="hero_title">EPOP CORNER</h1>
+            <p class="hero_sub mb-5">
+              we serve up a unique blend of flavors and quality ingredients,
+              ensuring every meal is a delightful culinary experience.
+            </p>
+            <h1 class="title mb-3 text-white">HOME</h1>
+            <div class="heading_deco mb-3"></div>
+            <h1 class="title mb-3 text-white">ABOUT</h1>
+            <div class="heading_deco mb-3"></div>
+            <h1 class="title mb-3 text-white">GALLERY</h1>
+            <div class="heading_deco mb-3"></div>
+            <h1 class="title mb-3 text-white">CONTACT</h1>
+            <div class="heading_deco mb-3"></div>
+            <h1 class="title mb-3 text-white">MENU</h1>
+            <div class="heading_deco mb-3"></div>
+          </center>
+        </div>
+      </div>
+
+      <!-- end navbar  -->
+
+      <div class="overflow_content">
+        <div class="d-flex justify-content-start">
+          <img
+            src="assets/images/hero_image01.png"
+            alt=""
+            class="header_img_left"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+          <center>
+            <div class="container">
+              <h1 class="hero_title">EPOP CORNER</h1>
+              <p class="hero_sub mb-5">
+                we serve up a unique blend of flavors and quality ingredients,
+                ensuring every meal is a delightful culinary experience.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-light px-5 py-3 border-3 fw-bold"
+              >
+                Our Menu !
+              </button>
+            </div>
+          </center>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <img
+            src="assets/images/hero_image02.png"
+            alt=""
+            class="header_img_right"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Menu Items ======= -->
+    <section class="container mb-5 pb-5" style="margin-top: 100px">
+      <center>
+        <p class="sub_title">What Happens Here</p>
+        <h1 class="title mb-5">OUR DELICIOUS OFFERINGS</h1>
+        <div class="heading_deco mb-5"></div>
+      </center>
+
+      <div class="row mt-5 overflow_content">
+        <div class="col-12 col-md mb-5">
+          <img
+            src="assets/images/menu_item01.png"
+            alt=""
+            class="menu_image shadow"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+        </div>
+        <div class="col-12 col-md-7 mb-5 d-flex align-items-center">
+          <div style="width: 100%">
+            <h1
+              class="item_title mb-5"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              TRIPLE SLY
+            </h1>
+            <div
+              class="row mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-12 col-md mb-4">
+                <p class="mb-0">
+                  Half Russian, Vienna, Special, Cheese & Chips
+                </p>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-3">
+                <h6 class="price fw-bold">R25.00</h6>
+              </div>
+            </div>
+            <!-- end menu item  -->
+            <div
+              class="row mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-12 col-md mb-4">
+                <p class="mb-0">
+                  Full Russian, Vienna, Cheese, Special, Polony & Chips
+                </p>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-3">
+                <h6 class="price fw-bold">R30.00</h6>
+              </div>
+            </div>
+            <!-- end menu item  -->
+            <div
+              class="row mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-12 col-md mb-4">
+                <p class="mb-0">
+                  Full Russian, Vienna, Burger, Cheese, Special, Polony & Chips
+                </p>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-3">
+                <h6 class="price fw-bold">R40.00</h6>
+              </div>
+            </div>
+            <!-- end menu item  -->
+            <div
+              class="row mb-4"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-12 col-md mb-4">
+                <p class="mb-0">
+                  Full Russian, Vienna, Burger,Egg Cheese, Special, Polony &
+                  Chips
+                </p>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-3">
+                <h6 class="price fw-bold">R45.00</h6>
+              </div>
+            </div>
+            <!-- end menu item  -->
+          </div>
+        </div>
+      </div>
+      <!-- end main item  -->
+      <div class="row mt-5">
+        <div class="col-12 col-md-7 mb-5 d-flex align-items-center">
+          <div style="width: 100%">
+            <h1
+              class="item_title mb-5"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              KOTA
+            </h1>
+            <div
+              class="row mb-4"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-3">
+                <h6 class="price fw-bold">R25.00</h6>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-12 col-md mt-4">
+                <p class="mb-0">Half Russian, Vienna, Special & Polony</p>
+              </div>
+            </div>
+            <!-- end menu item  -->
+            <div
+              class="row mb-4"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1300"
+            >
+              <div class="col-3">
+                <h6 class="price fw-bold">R30.00</h6>
+              </div>
+              <div class="col">
+                <div class="menu_deco"></div>
+              </div>
+              <div class="col-12 col-md mt-4">
+                <p class="mb-0">Full Russian, Vienna, Cheese & Polony</p>
+              </div>
+            </div>
+            <!-- end menu item  -->
+          </div>
+        </div>
+        <div class="col-12 col-md mb-5">
+          <img
+            src="assets/images/menu_item02.jpg"
+            alt=""
+            class="menu_image shadow"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Shared Meals ======= -->
+    <section class="container my-5">
+      <center>
+        <p class="sub_title">What Happens Here</p>
+        <h1 class="title mb-5">OUR SHARED MEALS</h1>
+        <div class="heading_deco mb-5"></div>
+      </center>
+      <div class="row mt-5 overflow_content">
+        <div class="col-12 col-md-12 col-lg-6">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 mb-5"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <div>
+                <center>
+                  <img
+                    src="assets/images/gallery_image02.jpg"
+                    alt=""
+                    class="shared_image shadow"
+                  />
+                  <div class="shared_card">
+                    <h4>FOODSPOT</h4>
+                    <p class="mb-3">Mixed Sishibo & Chips</p>
+                    <h5>R60.00</h5>
+                  </div>
+                </center>
+              </div>
+            </div>
+            <!-- end shared meal  -->
+            <div class="col-12 col-md-6 mb-5">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                <center>
+                  <img
+                    src="assets/images/gallery_image01.jpg"
+                    alt=""
+                    class="shared_image shadow"
+                  />
+                  <div class="shared_card">
+                    <h4>CHIPS</h4>
+                    <p class="mb-3">Medium</p>
+                    <h5>R20.00</h5>
+                    <p class="mb-3">Large</p>
+                    <h5>R30.00</h5>
+                  </div>
+                </center>
+              </div>
+            </div>
+            <!-- end shared meal  -->
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 d-flex align-items-center">
+          <div>
+            <h1
+              class="item_title mb-5"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              EPOP CORNER
+            </h1>
+            <p
+              class="text-secondary"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              EPOP CORNER, your go-to food truck for delicious and satisfying
+              meals! Our signature Mixed Sishibo & Chips offers a savory blend
+              of flavors paired with crispy, golden chips for just R60.00.
+              Perfect for a quick lunch or a leisurely meal with friends, EPOP
+              CORNER promises a delightful culinary experience every time.
+            </p>
+            <p
+              class="text-secondary"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              We also serve perfectly seasoned chips in two sizes: Medium for
+              R20.00 and Large for R30.00. Fried to perfection, our chips are an
+              ideal side or tasty snack on their own. At EPOP CORNER, we are
+              dedicated to providing quality food at great prices. Come and
+              enjoy the vibrant flavors and friendly service that make us a
+              favorite among food lovers!
+            </p>
+            <button class="btn btn-dark px-5 py-2">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Gallery ======= -->
+    <section class="shared_meals_bg my-5">
+      <div class="container">
+        <center>
+          <p class="sub_title text-light">What Happens Here</p>
+          <h1 class="title mb-5" style="color: #bb9b68">OUR GALLERY</h1>
+          <div class="heading_deco mb-5"></div>
+        </center>
+
+        <div class="row overflow_content">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_01.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_02.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_03.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_04.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_05.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="gallery_card p-4 shadow">
+              <img
+                src="assets/images/Food_06.jpg"
+                alt=""
+                class="gallery_image"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+          <!-- end gallery item  -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Our Story ======= -->
+    <section class="container mt-5">
+      <div class="row pt-5 overflow_content">
+        <div class="col-12 col-md-6 mb-4 d-flex align-items-center">
+          <div>
+            <center>
+              <p
+                class="sub_title text-dark"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                What Happens Here
+              </p>
+              <h1
+                class="title mb-5"
+                style="color: #bb9b68"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                OUR STORY
+              </h1>
+              <div class="heading_deco mb-5"></div>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                Welcome to <span class="fw-bold"> EPOP CORNER</span>! My name is
+                David, and I’m passionate about bringing delicious and
+                satisfying meals to you from our vibrant food truck. At EPOP
+                CORNER, we specialize in creating mouth-watering dishes with
+                bold flavors and quality ingredients. Our signature TRIPLE SLY
+                triple is a customer favorite, combining savory tastes with
+                crispy perfection.
+              </p>
+              <p
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                We pride ourselves on offering great food at affordable prices,
+                with friendly service that makes every visit memorable. Whether
+                you’re here for a quick bite or a leisurely meal, EPOP CORNER is
+                dedicated to making your dining experience exceptional. Thank
+                you for choosing us, and we look forward to serving you soon!
+              </p>
+              <button
+                class="btn btn_contact mt-5 px-5 py-3"
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+              >
+                CONTACT US
+              </button>
+            </center>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <iframe
+              class="story_video"
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fdazzyd.makgomatha%2Fvideos%2F959449489198745%2F&show_text=false&width=269&t=0"
+              width="269"
+              height="476"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= News Letter ======= -->
+    <section class="shared_meals_bg my-5">
+      <div class="container">
+        <div class="row overflow_content">
+          <div class="col-12 col-md-6 mb-4">
+            <img
+              src="assets/images/hero_image02.png"
+              alt=""
+              class="hero_image2"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <center>
+                <p class="sub_title text-white">What Happens Here</p>
+                <h1 class="title mb-5" style="color: #bb9b68">
+                  SUBSCRIBE TO OUR NEWSLETTER
+                </h1>
+                <div class="heading_deco mb-5"></div>
+              </center>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <center>
+                <button class="btn btn_subscribe px-5 py-3 mt-4">
+                  SUBSCRIBE
+                </button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section class="container my-5">
+      <div class="row pt-5 overflow_content">
+        <div class="col-12 col-md-6 mb-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <center>
+              <p class="sub_title text-dark">What Happens Here</p>
+              <h1 class="title mb-5" style="color: #bb9b68">CONTACT US</h1>
+              <div class="heading_deco mb-5"></div>
+            </center>
+            <div class="mt-3">
+              <h5>Telephone:</h5>
+              <p>066 261 0582</p>
+              <h5>Email:</h5>
+              <p>popcornerfoodcatering@gmail.com</p>
+              <h5>Location:</h5>
+              <p>21351 dubazana street ext 11, Tsakane</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.025521344163!2d28.350947485066925!3d-26.358036517632254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9520fa8cf54bcb%3A0xe4de8adf0d988ef4!2sTsakani%20Square!5e0!3m2!1sen!2sza!4v1716188765887!5m2!1sen!2sza"
+              width="100%"
+              class="rounded"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <section class="shared_meals_bg mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-5">
+            <center>
+              <h1 class="footer_name">EPOP</h1>
+              <h1 class="footer_name">CORNER</h1>
+              <p class="text-white mb-0">
+                we serve up a unique blend of flavors and quality ingredients,
+                ensuring every meal is a delightful culinary experience.
+              </p>
+            </center>
+          </div>
+          <div class="col-12 col-md-4 mb-5">
+            <center>
+              <h4 class="text-white fw-bold mb-3">Pages</h4>
+              <p class="text-light">Home</p>
+              <p class="text-light">About</p>
+              <p class="text-light">Gallery</p>
+              <p class="text-light">Contact</p>
+            </center>
+          </div>
+          <div class="col-12 col-md-4 mb-5">
+            <center>
+              <h4 class="text-white fw-bold mb-3">Contact</h4>
+              <h5 class="contact_title">Telephone:</h5>
+              <p class="text-light">066 261 0582</p>
+              <h5 class="contact_title">Email:</h5>
+              <p class="text-light">popcornerfoodcatering@gmail.com</p>
+              <h5 class="contact_title">Location:</h5>
+              <p class="text-light">21351 dubazana street ext 11, Tsakane</p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Animation Scripts start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Animation Scripts end  -->
+  </body>
+</html>
