@@ -13,6 +13,11 @@ body {
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Animation Overflow  */
 .overflow_content {
   overflow: hidden !important;
@@ -64,9 +69,9 @@ body {
 }
 
 .nav-link {
-  font-family: "Merriweather", serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
   color: var(--brown_color) !important;
   font-size: 18px;
 }
@@ -74,6 +79,15 @@ body {
 .menu_icon {
   color: white;
   font-size: 35px;
+}
+
+/* Page Header style  */
+.page_header_title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 40px;
 }
 
 /* Hero style  */
@@ -167,9 +181,26 @@ body {
   height: 320px;
 }
 
+.shared_meals_btn {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0px !important;
+}
+
 .btn_contact {
   background-color: var(--brown_color);
   color: white;
+  border-radius: 0px !important;
+  font-weight: bold;
+}
+
+.shared_meal_title {
+  color: lightgray;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
 }
 
 /* Gallery Style  */
@@ -197,6 +228,7 @@ body {
 .btn_subscribe {
   background-color: var(--brown_color);
   color: white;
+  border-radius: 0px !important;
 }
 
 /* Footer style  */
@@ -209,6 +241,21 @@ body {
 
 .contact_title {
   color: var(--brown_color);
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  font-size: 2rem; /* Adjust size as needed */
+  color: var(--brown_color); /* Adjust color as needed */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+#scrollToTopBtn:hover {
+  color: var(--brown_color); /* Darken on hover */
 }
 
 /* small screen style  */

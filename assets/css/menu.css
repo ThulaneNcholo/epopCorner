@@ -1,0 +1,24 @@
+:root {
+  --brown_color: #bb9b68;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+  --green_color: #75c137;
+  --turquoise_color: #26a6a1;
+}
+
+.menu_image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid var(--brown_color);
+}
+
+/* small screen style  */
+@media screen and (max-width: 576px) {
+  .menu_image {
+    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+  --brown_color: #bb9b68;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+  --green_color: #75c137;
+  --turquoise_color: #26a6a1;
+}
+
+.about_container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.about_sub_p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+}
+
+.about_us_video {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.btn_contact_about {
+  background-color: var(--brown_color);
+  color: white;
+}
+
+/* small screen style  */
+@media screen and (max-width: 576px) {
+  .about_video {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .about_container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  --brown_color: #bb9b68;
+  --orange_color: #f25334;
+  --white_color: rgb(255, 255, 255);
+  --background_color: #f1f3f2;
+  --green_color: #75c137;
+  --turquoise_color: #26a6a1;
+}
+
+.form-control {
+  background-color: #f6f4ef;
+  border-radius: 0px !important;
+  border: none !important;
+}
+
+.form_label {
+  color: var(--brown_color) !important;
+}
+
+.btn_submit {
+  background-color: var(--brown_color);
+  color: white;
+  border-radius: 0px !important;
+  font-weight: bold;
+}
+
+.address_icon {
+  font-size: 25px;
+  color: var(--brown_color);
+}
+
+.address_title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
